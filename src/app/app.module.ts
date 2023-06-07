@@ -2,13 +2,23 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { TodosComponent } from './Mycomponent/todos/todos.component';
+import { TodoItemComponent } from './Mycomponent/todo-item/todo-item.component';
+import { AddTodoComponent } from './Mycomponent/add-todo/add-todo.component';
+import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './Mycomponent/about/about.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodosComponent,
+    TodoItemComponent,
+    AddTodoComponent,
+    AboutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
